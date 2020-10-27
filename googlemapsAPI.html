@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Maps</title>
+</head>
+<body>
+<div class="conteiner-fluid p-5">
+    <div class="row">
+        <div class="col-lg-6" >
+            <form action="" method="post">
+                <div id="form-group">
+                    <input name="latlng" class="form-control" id="latlng" type="text" hidden required/> <!-- value get from map-->
+                    <textarea name="address" class="form-control" id="address" required></textarea>
+                    <button id="submit" class="btn btn-primary mb-2" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+            <div class="col-lg-6" id="map" style="height: 600px"></div>
+    </div>
+</div>
+<script src="geocoder.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"> // api
+</script>
+</body>
+</html>
